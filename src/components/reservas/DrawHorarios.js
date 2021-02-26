@@ -38,7 +38,7 @@ export default function DrawHorarios(props) {
     return (
         <View style={[reservasStyles.container2]}>
             {contador.map((item, index) => (
-                <>
+                <View key={index}>
 
                     {item ?
                         <TouchableOpacity
@@ -59,7 +59,7 @@ export default function DrawHorarios(props) {
                         </TouchableOpacity>
                     }
 
-                </>
+                </View>
             ))
             }
 

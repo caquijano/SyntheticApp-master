@@ -14,8 +14,8 @@ export default function Reservas(props) {
   const {reservas, setReservas} = props;
   return (
     <View>
-      {reservas.map((item) => (
-        <Reserva item={item} />
+      {reservas.map((item, index) => (
+        <Reserva key={index} item={item} />
       ))}
     </View>
   );
